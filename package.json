@@ -1,11 +1,9 @@
 {
-  "name": "node-starter",
+  "name": "trevor-test-lab",
   "version": "0.0.0",
-  "description": "A node package starter utility.",
+  "description": "A test lab for trevor development.",
   "main": "lib/index.js",
-  "bin": {
-    "node-starter": "cli.js"
-  },
+  "private": true,
   "directories": {
     "test": "test"
   },
@@ -13,18 +11,15 @@
     "prepublishOnly": "trevor",
     "test": "mocha"
   },
-  "keywords": [
-    "starter"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/trevor-test-lab.git"
+  },
   "author": "James Benner",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.3.0",
     "trevor": "github:jbenner-radham/trevor"
-  },
-  "dependencies": {
-    "handlebars": "^4.0.8",
-    "meow": "^3.7.0"
   }
 }

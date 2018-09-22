@@ -1,14 +1,6 @@
-node-module-skeleton
-====================
-A Node.js skeleton project.
-
-```json
-{
-    "devDependencies": {
-        "trevor": "github:jbenner-radham/trevor"
-    }
-}
-```
+trevor-test-lab
+===============
+A test lab for [trevor](https://www.npmjs.com/package/trevor) development.
 
 Project Structure
 -----------------
@@ -20,22 +12,19 @@ As per the CommonJS packages spec:
 >   * Documentation should be under the "doc" directory
 >   * Unit tests should be under the "test" directory
 
-Manpages
---------
-Manpages can be installed during global install on non-Windows systems by specifying them in the `package.json` manifest e.g.
-* `{"man": "man/doc.1"}`
-* `{"man": ["man/doc.1", "man/doc.3"]}`
-* `{"directories": {"man": "man/"}}`
-
-Bootstrap
----------
+Install
+-------
 ```sh
-$ npm init && npm install --save-dev chai mocha
+$ yarn install
+```
+
+Testing
+-------
+```sh
+$ yarn prepublishOnly
 ```
 
 References
 ----------
 * [Packages/1.0 - CommonJS Spec Wiki - Package Directory Layout](http://wiki.commonjs.org/wiki/Packages/1.0#Package_Directory_Layout)
-* [package.json | npm Documentation - man](https://docs.npmjs.com/files/package.json#man)
-* [package.json | npm Documentation - directories.man](https://docs.npmjs.com/files/package.json#directoriesman)
-* [Tern](http://ternjs.net/)
+* [package.json | npm Documentation](https://docs.npmjs.com/files/package.json)
